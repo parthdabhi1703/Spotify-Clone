@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./assets/library_icon.png" alt="library_icon" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+              <div class="icons-cir">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="icons-cir">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge hover-btn">Create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge hover-btn">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content scroll-container">
+        <div class="scroll-content">
+          <div class="sticky-nav">
+            <div class="sticky-nav-icons">
+              <div class="icons-cir-b">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="icons-cir-b hide">
+                <i class="fa-solid fa-chevron-right hide"></i>
+              </div>
+            </div>
+            <div class="sticky-nav-options">
+              <button class="badge nav-item hide hover-btn">
+                Explore Premium
+              </button>
+              <button class="badge nav-item dark-badge hover-btn">
+                <i
+                  class="fa-regular fa-circle-down nav-item"
+                  style="margin-right: 5px"
+                ></i
+                >Install App
+              </button>
+              <i class="fa-regular fa-bell icons-cir-b hover-btn"></i>
+              <i class="fa-regular fa-user icons-cir-b hover-btn"></i>
+            </div>
+          </div>
+          <div class="sticky-nav-buttons">
+            <div class="nav-buttons">
+              <button class="badge badge2">All</button>
+              <button class="badge badge2 gray-badge hide">Music</button>
+              <button class="badge badge2 gray-badge hide">Podcasts</button>
+            </div>
+          </div>
+          <h2 class="und-text">Recently played</h2>
+          <div class="cards-container">
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/card1img.jpg" class="card-img" />
+              <p class="card-title">Daylight</p>
+              <p class="card-info und-text">David Kushner</p>
+            </div>
+          </div>
+
+          <div class="header">
+            <h2 class="und-text">Popular artists</h2>
+            <p class="show-all und-text">Show all</p>
+          </div>
+          <div class="cards-container">
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/artist_img1.jpeg" class="artist-img" />
+              <p class="card-title">Pritam</p>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/artist_img2.jpeg" class="artist-img" />
+              <p class="card-title">Arijit Singh</p>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/artist_img3.jpeg" class="artist-img" />
+              <p class="card-title">A.R. Rahman</p>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/artist_img4.jpeg" class="artist-img" />
+              <p class="card-title">Sachin-Jigar</p>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/artist_img5.jpeg" class="artist-img" />
+              <p class="card-title">Anirudh Ravichander</p>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/artist_img6.jpeg" class="artist-img" />
+              <p class="card-title">Atif Aslam</p>
+              <p class="card-info">Artist</p>
+            </div>
+          </div>
+
+          <div class="header">
+            <h2 class="und-text">Try something else</h2>
+            <p class="show-all und-text">Show all</p>
+          </div>
+          <div class="cards-container">
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/card2img.jpg" class="card-img" />
+              <p class="card-title">Mahiye jinna Sohna</p>
+              <p class="card-info und-text">Darshan Raval</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/card3img.jpg" class="card-img" />
+              <p class="card-title">Tum Ho</p>
+              <p class="card-info und-text">Mohit Chauhan, Suzanne D'Mello</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/card4img.jpg" class="card-img" />
+              <p class="card-title">O'Meri Laila</p>
+              <p class="card-info und-text">Atif Aslam, Jyotica Tangri</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/card8img.jpg" class="card-img" />
+              <p class="card-title">Matargashti</p>
+              <p class="card-info und-text">Mohit Chauhan</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/card9img.jpg" class="card-img" />
+              <p class="card-title">Tum Se Hi</p>
+              <p class="card-info und-text">Pritam, Mohit Chauhan</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/card10img.jpg" class="card-img" />
+              <p class="card-title">Tum Tak</p>
+              <p class="card-info und-text">A.R. Rahman, Javed Ali</p>
+            </div>
+          </div>
+          <div class="header">
+            <h2 class="und-text">Featured Charts</h2>
+            <p class="show-all und-text">Show all</p>
+          </div>
+          <div class="cards-container">
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/charts_img1.jpg" class="card-img" />
+              <p class="card-title">Top 50 - India</p>
+              <p class="card-info">Your daily update of the most played...</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/charts_img2.jpg" class="card-img" />
+              <p class="card-title">Top Songs - India</p>
+              <p class="card-info">Your weekly update of the most played...</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/charts_img3.jpg" class="card-img" />
+              <p class="card-title">Viral 50 - India</p>
+              <p class="card-info">
+                Your daily update of the most viral tracks...
+              </p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/charts_img4.jpg" class="card-img" />
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">Your daily update of the most played...</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="#000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img src="./assets/charts_img5.jpg" class="card-img" />
+              <p class="card-title">Top Songs - Global</p>
+              <p class="card-info">Your weekly update of the most played...</p>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <img src="./assets/album_picture.jpeg" class="album-img" />
+          <div class="album-text">
+            <p class="album-name und-text">Daylight</p>
+            <p class="album-artist und-text">David Kushner</p>
+          </div>
+          <i
+            class="fa-regular fa-heart album-icon hover-btn"
+            aria-label="Favorite"
+          ></i>
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img
+              src="./assets/player_icon1.png"
+              class="player-control-icon hover-btn"
+            />
+            <img
+              src="./assets/player_icon2.png"
+              class="player-control-icon hover-btn"
+            />
+            <img
+              src="./assets/player_icon3.png"
+              class="player-control-icon play-pause-btn hover-btn"
+            />
+            <img
+              src="./assets/player_icon4.png"
+              class="player-control-icon hover-btn"
+            />
+            <img
+              src="./assets/player_icon5.png"
+              class="player-control-icon hover-btn"
+            />
+          </div>
+          <div class="playback-bar">
+            <span class="current-time">0:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="total-time">3:33</span>
+          </div>
+        </div>
+        <div class="controls">
+          <img
+            src="./assets/controls_icon1.png"
+            class="controls-icon controls-icon-hide hover-btn"
+          />
+          <img
+            src="./assets/controls_icon2.png"
+            class="controls-icon controls-icon-hide hover-btn"
+          />
+          <img
+            src="./assets/controls_icon3.png"
+            class="controls-icon controls-icon-hide hover-btn"
+          />
+          <img
+            src="./assets/controls_icon4.png"
+            class="controls-icon hide hover-btn"
+          />
+          <img src="./assets/controls_icon5.png" class="controls-icon" />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            class="volume-bar"
+            step="1"
+            style="margin-right: 0.5rem"
+          />
+          <img
+            src="./assets/controls_icon6.png"
+            class="controls-icon hover-btn"
+          />
+          <img
+            src="./assets/controls_icon7.png"
+            class="controls-icon expand-icon hover-btn"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
